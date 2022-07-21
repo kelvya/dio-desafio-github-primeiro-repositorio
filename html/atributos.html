@@ -1,0 +1,83 @@
+<!--
+    Hipertext Markup Language
+
+    Atributos Globais:
+        -Class
+            É uma lista separada por espaço das classes do elemento. as classes permitem ao CSS e ao JavaScript selecionar e acessar elementos específicos atraves dos seletores de classe ou funciona como um método 
+            Document.getElementsByClassName().
+        -contenteditable
+        -data-*
+        -hidden
+        -id
+        -style
+        -tabindex
+        -title
+-->
+<div class="exemplo" contenteditable="true">
+    <p>exemplo1</p>
+</div>
+
+<div class="exemplo" data-id=""> <!--  data-qualquernomeaqui="" ou data-qualquer-nome-aqui=""  -->
+    <p>exemplo2</p>
+</div>
+
+<div class="exemplo" hidden>
+    <p>exemplo3</p>
+</div>
+
+<div class="exemplo" style="color: red"> <!-- o html permite, mas não é indicado, geralmente usamos class e id para trabalhar os estilos em um arquivo fora do html, diretamente no arquivo de CSS-->
+    <p>exemplo4</p>
+</div>
+
+<!-- tabindex
+é usado para a navegação por tab, no teclado.
+Se ficar desordenado, quem estiver usando o teclado para navegação não conseguirá o avanço de forma correta ou terá a otimização comprometida-->
+<div class="exemplo" tabindex="1">
+    <p>exemplo5</p>
+</div>
+
+<div class="exemplo" tabindex="2">
+    <p>exemplo6</p>
+</div>
+
+<div class="exemplo" tabindex="3">
+    <p>exemplo7</p>
+</div>
+
+<!--Title
+definir um título
+quando pausamos o mouse sobre o conteúdo é apresentado o título atribuído-->
+<div class="exemplo" title="Exemplo de título">
+    <p>exemplo8</p>
+</div>
+
+<!--acceskey
+A maioria dos navegadores não suporta duplicar o atributo accesskey. Por exemplo, uma página não pode ter dois atalhos com accesskey = "N". A maioria dos irá ignorar um dos atalhos. Alguns navegadores vão ignorar a primeira accesskey, e outros navegadores ignoram a segunda instância. O navegador que aceita accesskey duplicado é o Internet Explorer.
+-->
+<nav>
+    <p> exemplo9 <br>
+        <a href="http://www.google.com.br" accesskey="G">Google</a> 
+        <a href="http://www.yahoo.com" accesskey="Y">Yahoo</a> 
+        <a href="http://www.facebook.com" accesskey="F">Facebook</a>
+    </p>
+</nav>
+
+<!--  dir  
+que indica a direcionalidade do texto do elemento.
+-->
+<p dir="ltr">
+    exemplo10 <br>
+    ltr, significa da esquerda para a direita e deve ser usado para idiomas que são escritos da esquerda para a direita (como o português do Brasil, inglês, espanhol, etc);
+</p>
+
+<p dir="rtl">
+    exemplo11 <br>
+    rtl, significa da direita para a esquerda e deve ser usado para idiomas que são escritos da direita para a esquerda (como o árabe);</p>
+</p>
+
+<p dir="auto">
+    exemplo12 <br>
+    auto, que permite que o agente do usuário decida. Ele usa um algoritmo básico, pois analisa os caracteres dentro do elemento até encontrar um caractere com uma direcionalidade forte e, em seguida, aplica essa direcionalidade para todo o elemento.</p>
+</p>
+
+
